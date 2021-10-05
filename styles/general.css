@@ -1,0 +1,42 @@
+:root {
+	--darkGrey: #34403a;
+}
+
+a,
+a:hover,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	color: var(--darkGrey);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-sb-c {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-col-fs-c {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-col-sb-c {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inactive {
+	display: none;
+}

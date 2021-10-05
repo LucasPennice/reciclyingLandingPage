@@ -1,0 +1,123 @@
+.heroImg {
+	padding-top: 50px;
+	width: 25vw;
+	min-width: 300px;
+}
+
+#h1 {
+	font-size: 30px;
+}
+#h2 {
+	font-size: 20px;
+	opacity: 0.5;
+}
+
+#goDown {
+	margin-top: 50px;
+	animation: bobble 1s ease-in-out infinite;
+}
+
+#cardContainer {
+	background-color: #379163;
+	padding: 80px;
+	border-radius: 40px;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 150px;
+}
+
+#card {
+	height: 530px;
+	width: 248px;
+	color: white;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.quotesContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 70px;
+	gap: 100px;
+}
+
+.quotesContainer > div {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.quotesContainer > div > div > h1 {
+	color: black;
+	font-size: 26px;
+}
+
+.quotesContainer > div > div > h2 {
+	color: #48aa78;
+	font-size: 22px;
+}
+
+.cardDiv > img {
+	margin: 0 auto;
+	width: 60%;
+}
+
+.getStartedDiv {
+	background-color: rgb(241, 241, 241);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 30px;
+	padding: 3rem;
+	margin-top: 60px;
+}
+
+.getStartedDiv > h1 {
+	margin: 0;
+}
+
+.getStartedDiv > a {
+	font-size: 30px;
+	padding: 18px 45px;
+	color: white;
+	background-color: #123a77;
+	border-radius: 60px;
+	transition: 0.2s all ease-in-out;
+}
+
+#btnGetStarted:hover {
+	background-color: #154388;
+	transform: scale(1.1);
+}
+
+@media (min-width: 650px) {
+	#cardContainer {
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+/* Makes sure that when the cards go in row mode the rext doesnt bunch up */
+@media (min-width: 1100px) {
+	.quotesContainer {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.quotesContainer > div {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+@media (min-width: 800px) {
+	.getStartedDiv {
+		flex-direction: row;
+		justify-content: center;
+		gap: 100px;
+	}
+}
